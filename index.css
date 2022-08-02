@@ -1,0 +1,77 @@
+*{
+    
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99%;
+    
+}
+
+body{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.wallpapersafari.com/62/93/VR5mhe.jpg");
+    background-size: 100% 100%;
+}
+
+#gameAndScore{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(220,220,220, 50%);
+    width: 100%;
+    gap: 80px;
+    padding: 50px;
+}
+
+#gameDiv{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score{
+    display: flex;
+    flex: 1 1 auto;
+    gap: 100px;
+}
+
+.players{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gameText, .buttons button, .keepScore{
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button{
+    flex: 1 1 auto;
+    height: 130px;
+    width: 130px;
+}
+

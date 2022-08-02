@@ -78,7 +78,7 @@ function keepScore(){
 }
 
 function restartGame(){
-  if(playerScore == 10 || computerScore == 10){
+  if(playerScore == 5 || computerScore == 5){
     setTimeout(function(){
       window.location.reload();
    }, 2000);

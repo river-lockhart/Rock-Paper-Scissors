@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/Rock-Paper-Scissors/index.css">
 </head>
 <body>
-    <div id="gameDiv">
-        <h1 class="gameText" id="playerText">Player: </h1>
-        <h1 class="gameText" id="computerText">Computer: </h1>
-        <h1 class="gameText" id="resultText">Result: </h1>
+    <div id="gameAndScore">
+        <div id="gameDiv">
+
+            <div class="players">
+                <h1 class="gameText" id="playerText">Player: </h1>
+                <h1 class="gameText" id="computerText">Computer: </h1>
+                <h1 class="gameText" id="resultText">Result: </h1>
+            </div>
         
-        <button class="choiceBtn">Rock</button>
-        <button class="choiceBtn">Paper</button>
-        <button class="choiceBtn">Scissors</button>
+            <div class="buttons">
+                <button class="choiceBtn">Rock</button>
+                <button class="choiceBtn">Paper</button>
+                <button class="choiceBtn">Scissors</button>
+            </div>
+
+        </div>
+
+        <div id="score">
+            <div class="you">
+                <h1 class="keepScore" id="yourScore">Your Score: </h1>
+            </div>
+
+            <div class="them">
+                <h1 class="keepScore" id="oppScore">Opponent Score: </h1>
+            </div>
+        </div>
+
     </div>
-    <div id="score">
-        <h1 class="keepScore" id="yourScore">Your Score: </h1>
-        <h1 class="keepScore" id="oppScore">Opponent Score: </h1>
-    </div>
-    <script type="text/javascript" src="/Rock-Paper-Scissors/index.js">
-    </script>
+
+    <script type="text/javascript" src="/Rock-Paper-Scissors/index.js"></script>
+
 </body>
 </html>
