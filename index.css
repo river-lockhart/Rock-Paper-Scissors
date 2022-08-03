@@ -20,12 +20,17 @@ body{
     background-size: 100% 100%;
 }
 
+#winnerScreen{
+    flex: 1 1 auto;
+    
+}
+
 #gameAndScore{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(220,220,220, 50%);
+    background-color: rgba(0,0,0,50%);
     width: 100%;
     gap: 80px;
     padding: 50px;

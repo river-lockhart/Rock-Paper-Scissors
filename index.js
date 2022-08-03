@@ -21,7 +21,10 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
   keepScore();
   yourScore.textContent = `Your Score: ${playerScore}`;
   oppScore.textContent = `Opponent Score: ${computerScore}`;
-  restartGame();
+  winnerScreen();
+
+  //May come back to alter this function. Currently replaced by winnerScreen
+  //restartGame(); 
 }));
 
 function computerTurn(){
@@ -56,6 +59,7 @@ function checkWinner(){
   }
 }
 
+
 function keepScore(){
   if (computer == "Rock" && player == "Paper"){
     playerScore ++;
@@ -77,10 +81,28 @@ function keepScore(){
   }
 }
 
-function restartGame(){
+//Replaced by winnerScreen(). May come back to this function.
+/*function restartGame(){
   if(playerScore == 5 || computerScore == 5){
-    setTimeout(function(){
+      setTimeout(function(){
       window.location.reload();
-   }, 2000);
+   }, 1500);
+  }
+}*/
+
+function winnerScreen(){
+  if(playerScore === 5){
+    alert("YOU WON, CONGRATULATIONS!");
+      document.location.reload();
+      clearInterval(interval);
+  } else if(computerScore === 5){
+    alert("YOU LOST, TRY AGAIN!");
+      document.location.reload();
+      clearInterval(interval);
   }
 }
+
+
+
+
+
